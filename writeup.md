@@ -16,7 +16,7 @@ My pipeline is constructed of 6 steps:
 In order to draw one line instead of all detected in point 5 I changed the draw_lines() function so that it takes all the lines, calculates its slope and center point and categorizes these two variables to the left line or right lane depending on the slope. Then I calculate the average slope, average center point and the second parameter in the line equasion.
 Then I calculate the starting points of the lines to be drawn and the intersection of them.
 
-[image1]: ./outputsolidYellowCurve2.jpg "hehe"
+![Image1](outputsolidYellowCurve2.jpg)
 
 ### 2. Potential shortcomings with the pipeline
 First is that the average slope can be way of if the HoughLinesP detects some objects like white cars and then the drawn line barely matches the actual line.
