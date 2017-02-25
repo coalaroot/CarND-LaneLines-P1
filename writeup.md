@@ -4,13 +4,13 @@ My pipeline is constructed of 6 steps:
 
 1. I convert the image to grayscale
 2. I use gaussian blur with kernel size of 5
-3. I use Canny Edge detection with thresholds 50 and 150
+3. I use Canny Edge detection with thresholds 90 and 180
 4. Then I take only the region that interests me, which is a triangle; left corner, right corner and almoast middle of the image
 5. I use Hough Line Transform to detect lines with parameters as follows:
 
   - rho = 1
   - theta = np.pi/180
-  - threshold = 10
+  - threshold = 20
   - min_line_length = 6
   - max_line_gap = 5
   
